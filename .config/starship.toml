@@ -36,8 +36,9 @@ color_bg5 = "#400c3a"
 color_red = "#fe1c57"
 color_green = "#2ed8a2"
 color_yellow = "#f2d16b"
+color_cyan = "#4fc1f2"
 color_gray = "#aaaaaa"
-color_white = "#cccccc"
+color_white = "#e7e9e3"
 
 [character]
 error_symbol = "[❯](bold color_red)"
@@ -48,7 +49,7 @@ format = "[$duration](bg:color_bg5 fg:color_gray)"
 min_time = 500
 
 [directory]
-style = "bg:color_bg2 fg:color_white"
+style = "bg:color_bg2 fg:color_yellow"
 format = "[$path]($style)"
 truncation_length = 4
 truncation_symbol = "…/"
@@ -62,7 +63,7 @@ truncate_to_repo = false
 
 [git_branch]
 symbol = ""
-style = "bg:color_bg3 fg:color_yellow"
+style = "bg:color_bg3 fg:color_cyan"
 format = "[$symbol $branch]($style)"
 
 [git_status]
