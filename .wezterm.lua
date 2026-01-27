@@ -44,7 +44,7 @@ return {
   hide_mouse_cursor_when_typing = true,
 
 	-- Font settings
-  font = wezterm.font("FiraMono"),
+  font = wezterm.font("FiraMono Nerd Font"),
   font_size = 10.0,
 
 	-- Disable top menu bar
