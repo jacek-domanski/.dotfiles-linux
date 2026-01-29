@@ -2,37 +2,37 @@ local wezterm = require 'wezterm';
 
 return {
   colors = {
-    foreground = "#e7e9e3",
+    foreground = "#cccccc",
     background = "#1e1e1e",
 
-    cursor_bg = "#e7e9e3",
+    cursor_bg = "#ffffff",
     cursor_fg = "#11131a",
-    cursor_border = "#5d8df7",
+    cursor_border = "#ffffff",
 
     -- tmux copy-mode friendly selection
-    selection_bg = "#2a2f3a", -- subtle highlight (dark blue-gray)
+    selection_bg = "#3a3d41", -- subtle highlight (dark blue-gray)
     selection_fg = "#c5cbd6", -- keep original foreground
 
     ansi = {
-      "#11131a", -- black
-      "#fe1c57", -- red
+      "#000000", -- black
+      "#cd3131", -- red
       "#2ed8a2", -- green
-      "#f2d16b", -- yellow
-      "#5d8df7", -- blue
-      "#A61F96", -- magenta
-      "#4fc1f2", -- cyan
-      "#e7e9e3", -- white
+      "#e5e510", -- yellow
+      "#2472c8", -- blue
+      "#bc3fbc", -- magenta
+      "#11a8cd", -- cyan
+      "#e5e5e5", -- white
     },
 
     brights = {
-      "#11131a",
-      "#ff4b78",
-      "#57e0c4",
-      "#ffe07a",
-      "#7aa0ff",
-      "#d06acf",
-      "#7ed1ff",
-      "#ffffff",
+      "#666666",
+      "#f14c4c",
+      "#23d18b",
+      "#f5f543",
+      "#3b8eea",
+      "#d670d6",
+      "#29b8db",
+      "#e5e5e5",
     },
   },
 
