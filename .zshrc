@@ -123,7 +123,7 @@ alias zrc='v ~/.zshrc'
 alias gcfg='v ~/.gitconfig'
 
 alias ez='eza -a -l --group-directories-first'
-alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dtf='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # alias code='code --password-store=basic'
 
 
