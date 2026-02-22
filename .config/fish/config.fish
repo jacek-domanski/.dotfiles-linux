@@ -22,11 +22,16 @@ alias gl='gla -40'
 alias v='code'
 alias zrc='v ~/.zshrc'
 alias gcfg='v ~/.gitconfig'
+alias fcfg='v ~/.config/fish/config.fish'
+
+alias backup-notes='cd ~/Projects/notes && git add . && git commit -m "Update notes" && git push && cd -'
 
 alias ez='eza -a -l --group-directories-first'
 alias dtf='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias bat='batcat'
 alias cat='bat'
+
+alias vial='~/Projects/Vial/./Vial-v0.7.5-x86_64.AppImage'
 
 # functions
 
