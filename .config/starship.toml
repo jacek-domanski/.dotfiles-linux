@@ -34,11 +34,17 @@ $cmd_duration\
 palette = "ccswe_dark"
 	
 [palettes.ccswe_dark]
-color_bg1 = "#336699"
-color_bg2 = "#2f5783"
-color_bg3 = "#294262"
-color_bg4 = "#232f44"
-color_bg5 = "#1d2230"
+color_bg1 = "#5B79AE"
+color_bg2 = "#4E6897"
+color_bg3 = "#425780"
+color_bg4 = "#354669"
+color_bg5 = "#283452"
+
+#color_bg1 = "#336699"
+#color_bg2 = "#2f5783"
+#color_bg3 = "#294262"
+#color_bg4 = "#232f44"
+#color_bg5 = "#1d2230"
 	
 color_red = "#cd3131"
 color_green = "#2ed8a2"
@@ -48,17 +54,19 @@ color_magenta = "#bc3fbc"
 color_cyan = "#29b8db"
 color_gray = "#aaaaaa"
 color_white = "#e5e5e5"
+color_text2 = "#C7D2F0"
+color_text3 = "#9FB0D6"
 	
 [character]
 error_symbol = "[](bold color_red)"
 success_symbol = "[❯](bold color_green)"
 	
 [cmd_duration]
-format = "[$duration](bg:color_bg5 fg:color_cyan)"
+format = "[$duration](bg:color_bg5 fg:color_text3)"
 min_time = 500
 	
 [directory]
-style = "bg:color_bg2 fg:color_cyan"
+style = "bg:color_bg2 fg:color_text2"
 format = "[$path]($style)"
 truncation_length = 4
 truncation_symbol = "…/"
@@ -72,7 +80,7 @@ truncate_to_repo = false
 	
 [git_branch]
 symbol = ""
-style = "bg:color_bg3 fg:color_cyan"
+style = "bg:color_bg3 fg:color_text2"
 format = "[$symbol $branch]($style)"
 	
 [git_status]
@@ -87,7 +95,7 @@ style = "bold bg:color_bg3 fg:color_cyan"
 format = "[@$hostname]($style)"
 ssh_only = true
 ssh_symbol = " "
-style = "bg:color_bg1 fg:color_cyan"
+style = "bg:color_bg1 fg:color_text2"
 	
 [os]
 format = "[$symbol]($style)"

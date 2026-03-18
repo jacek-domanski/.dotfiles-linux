@@ -68,7 +68,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zoxide)
+plugins=(zoxide zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -115,17 +115,22 @@ alias ga='git add -v --all'
 alias gc='git commit -v'
 alias pwt='git push && git push --tags'
 alias sn='git fetch && gl'
-alias gla="git --no-pager log --all --graph --pretty=format:'%C(yellow)%h%Creset %C(auto)%d%Creset %s %Cgreen%cr %C(bold blue)%an%Creset' --abbrev-commit --date=relative"
+alias gla="git --no-pager log --all --graph --pretty=format:'%C(yellow)%h%Creset %C(auto)%d%Creset %s  %Cgreen%cr  %C(bold blue)%an%Creset' --abbrev-commit"
 alias gl='gla -40'
 
-alias v='code'
+alias v='nvim'
 alias zrc='v ~/.zshrc'
 alias gcfg='v ~/.gitconfig'
+alias nvcfg='v ~/.config/nvim/init.lua'
+alias wtcfg='v ~/.wezterm.lua'
 
-alias ez='eza -a -l --group-directories-first'
+alias ez='eza -l --group-directories-first'
+alias ezh='ez -a'
 alias dtf='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-# alias code='code --password-store=basic'
-
+alias bat='batcat'
+alias cat='bat'
+alias backup-notes='cd ~/Projects/notes && git add . && git commit -m "Update notes" && git push && cd -'
+alias vial='~/Projects/Vial/./Vial-v0.7.5-x86_64.AppImage'
 
 gd () {
 	git diff $@

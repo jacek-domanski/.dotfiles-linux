@@ -26,7 +26,7 @@ alias fcfg='v ~/.config/fish/config.fish'
 
 alias backup-notes='cd ~/Projects/notes && git add . && git commit -m "Update notes" && git push && cd -'
 
-alias ez='eza -a -l --group-directories-first'
+alias ez='eza -A -l --group-directories-first'
 alias dtf='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias bat='batcat'
 alias cat='bat'
@@ -40,7 +40,7 @@ function gd
 end
 
 function gr 
-	git eset $argv
+	git reset $argv
 end
 
 # tools
