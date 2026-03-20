@@ -4,3 +4,7 @@
 [core]
     editor = kate --block --new --startanon
 	pager = less -F -X # dont use pager if less content fits in one screen
+[advice]
+	defaultBranchName = false
+[push]
+	autoSetupRemote = true
