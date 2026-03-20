@@ -23,6 +23,7 @@ $dotnet\
 $java\
 $kotlin\
 $nodejs\
+$rust\
 [ ](bg:color_bg4)\
 [ ](fg:color_bg4 bg:color_bg5)\
 $cmd_duration\
@@ -89,7 +90,7 @@ behind = "⇣${count}"
 deleted = ""
 diverged = "⇕⇡${ahead_count}⇣${behind_count}"
 format = '[( $all_status $ahead_behind)]($style)'
-style = "bold bg:color_bg3 fg:color_cyan"
+style = "bold bg:color_bg3 fg:color_text2"
 	
 [hostname]
 format = "[@$hostname]($style)"
@@ -134,7 +135,12 @@ symbol = " "
 style = "bg:color_bg4 fg:#5FA04E"
 format = '[$symbol($version)]($style)'
 symbol = " "
-	
+
+[rust]
+format = '[$symbol]($style)'
+style = "bg:color_bg4 fg:#6295CB"
+symbol = " "
+
 # OS Symbols
 [os.symbols]
 Alpaquita = " "
