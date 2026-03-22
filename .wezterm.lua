@@ -84,6 +84,12 @@ return {
 	},
 	leader = { key = "a", mods = "CTRL", timeout_milliseconds = 1000 },
 	keys = {
+
+		{
+			key = "a",
+			mods = "CTRL|LEADER",
+			action = act.SendKey({ key = "a", mods = "CTRL" }),
+		},
 		{
 			key = "s",
 			mods = "LEADER",
