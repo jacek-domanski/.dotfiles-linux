@@ -131,6 +131,9 @@ alias bat='batcat'
 alias cat='bat'
 alias backup-notes='cd ~/Projects/notes && git add . && git commit -m "Update notes" && git push && cd -'
 alias vial='~/Projects/Vial/./Vial-v0.7.5-x86_64.AppImage'
+alias esp-idf='source ~/.espressif/v6.0/esp-idf/export.sh'
+alias idf='idf.py'
+alias kanata='sudo ~/.kanata/kanata_linux_x64'
 
 gd () {
 	git diff $@
