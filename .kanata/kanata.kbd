@@ -1,0 +1,19 @@
+(defcfg
+  process-unmapped-keys yes
+)
+
+(defsrc
+  a s d f j k l ;
+)
+
+(deflayer base
+  (tap-hold-release 200 250 a lalt)
+  (tap-hold-release 200 250 s lmeta)
+  (tap-hold-release 200 250 d lsft)
+  (tap-hold-release 200 250 f lctl)
+
+  (tap-hold-release 200 250 j rctl)
+  (tap-hold-release 200 250 k rsft)
+  (tap-hold-release 200 250 l rmeta)
+  (tap-hold-release 200 250 ; ralt)
+)
