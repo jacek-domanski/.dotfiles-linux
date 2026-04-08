@@ -2,7 +2,8 @@
 	email = j.domanski92@gmail.com
 	name = Jacek Domanski
 [core]
-    editor = kate --block --new --startanon
+    # editor = kate --block --new --startanon
+    editor = nvim
 	pager = less -F -X # dont use pager if less content fits in one screen
 [advice]
 	defaultBranchName = false
