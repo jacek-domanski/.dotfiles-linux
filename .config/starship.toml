@@ -35,11 +35,17 @@ $cmd_duration\
 palette = "ccswe_dark"
 	
 [palettes.ccswe_dark]
-color_bg1 = "#5B79AE"
-color_bg2 = "#4E6897"
-color_bg3 = "#425780"
-color_bg4 = "#354669"
-color_bg5 = "#283452"
+color_bg1 = "#689ef1"
+color_bg2 = "#5f85cb"
+color_bg3 = "#546da7"
+color_bg4 = "#475784"
+color_bg5 = "#394262"
+
+#color_bg1 = "#5B79AE"
+#color_bg2 = "#4E6897"
+#color_bg3 = "#425780"
+#color_bg4 = "#354669"
+#color_bg5 = "#283452"
 
 #color_bg1 = "#336699"
 #color_bg2 = "#2f5783"
@@ -55,6 +61,7 @@ color_magenta = "#bc3fbc"
 color_cyan = "#29b8db"
 color_gray = "#aaaaaa"
 color_white = "#e5e5e5"
+color_text1 = "#D0D0FF"
 color_text2 = "#C7D2F0"
 color_text3 = "#9FB0D6"
 	
@@ -67,7 +74,7 @@ format = "[$duration](bg:color_bg5 fg:color_text3)"
 min_time = 500
 	
 [directory]
-style = "bg:color_bg2 fg:color_text2"
+style = "bg:color_bg2 fg:color_text1"
 format = "[$path]($style)"
 truncation_length = 4
 truncation_symbol = "…/"
