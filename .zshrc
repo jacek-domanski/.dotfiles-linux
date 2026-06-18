@@ -124,7 +124,7 @@ alias gcfg='v ~/.gitconfig'
 alias nvcfg='v ~/.config/nvim/init.lua'
 alias wtcfg='v ~/.wezterm.lua'
 
-alias ez='eza -l --group-directories-first'
+alias ez='eza -l --group-directories-first --icons'
 alias ezh='ez -a'
 alias dtf='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias bat='batcat'
@@ -133,7 +133,7 @@ alias backup-notes='cd ~/Projects/notes && git add . && git commit -m "Update no
 alias vial='~/Projects/Vial/./Vial-v0.7.5-x86_64.AppImage'
 alias esp-idf='source ~/.espressif/v6.0/esp-idf/export.sh'
 alias idf='idf.py'
-alias kanata='sudo ~/.kanata/kanata_linux_x64'
+alias zj='zellij'
 
 gd () {
 	git diff $@
@@ -143,7 +143,18 @@ gr () {
 	git reset $@
 }
 
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	command yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
+	command rm -f -- "$tmp"
+}
+
 eval "$(starship init zsh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 eval "$(zoxide init zsh)"
 eval "$(fzf --zsh)"
+
+# Created by `pipx` on 2026-05-01 13:31:35
+export PATH="$PATH:/home/jacek/.local/bin"
