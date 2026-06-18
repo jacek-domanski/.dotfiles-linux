@@ -8,6 +8,7 @@ format = """
 [](fg:color_bg1)\
 [ ](bg:color_bg1)\
 $os\
+${custom.toolbox}\
 $username\
 $hostname\
 [ ](fg:color_bg1 bg:color_bg2)\
@@ -194,3 +195,9 @@ Unknown = " "
 Void = " "
 Windows = "󰍲 "
 
+[custom.toolbox]
+description = "Displays an icon inside a Toolbx container"
+when = "test -f /run/.containerenv && test -f /run/.toolboxenv"
+command = "echo" # Dummy command since we only need the static symbol
+format = "[󰏗 ]($style)"
+style = "fg:color_white bg:color_bg1"
