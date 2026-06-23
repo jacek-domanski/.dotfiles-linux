@@ -126,6 +126,8 @@ alias wtcfg='v ~/.wezterm.lua'
 
 alias ez='eza -l --group-directories-first --icons'
 alias ezh='ez -a'
+alias ezt='ez --tree -L'
+alias ezht='ezh --tree -L'
 alias dtf='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias bat='batcat'
 alias cat='bat'
